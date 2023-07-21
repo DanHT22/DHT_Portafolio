@@ -1,0 +1,87 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navBar */
+.navbar{
+    background-color: black;
+    padding: 0px 0px 0px 0px;
+}
+
+#navbarNav {
+    padding-top: 30px;
+    padding-left: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Handlee', cursive;
+}
+
+.desarrolladora, .miNombre, .miDescripcion {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+.bi-linkedin{
+    margin-left: 10px;
+}
+
+.bi-linkedin:hover{
+    color: #6ac3f3;
+}
+
+.bi{
+    margin-right: 15px;
+    color: azure;
+}
+
+.bi-github:hover{
+    color: #C8A7E7;
+}
+
+.bi-envelope-fill:hover{
+    color: #F4BD46;
+}
+
+img {
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* Habilidades */
+
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h5{
+    font-weight:900;
+    padding-bottom: 10px;
+}
+
+/* carrusel */
+
+.frases{
+    padding: 20px;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 0px 0px 0px 0px;
+}
+
+.pFooter{
+    padding: 10px;
+}
+
