@@ -1,0 +1,17 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form{
+    margin-top: 3rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+
+
+input{
+    caret-color: rgb(255, 81, 0);
+}
+

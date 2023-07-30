@@ -5,16 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DHT Portafolio</title>
+    <!-- Hojas de estilo -->
+    <link rel="preload" href="src/CSS/normalize.css" as="style">
     <link rel="stylesheet" href="./src/CSS/style.css">
     <!-- Tipografias -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Icono pestaña -->
+    <link rel="shortcut icon" href="./src/img/atomo.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -23,7 +29,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <div class="container-fluid text-center">
+                <div class="container text-center">
                     <div class="row">
                         <div class="col">
                             <!-- Barra de navegación -->
@@ -34,17 +40,17 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ">
-                                    <li class="nav-item">
+                                    <li class="nav-item navtext">
                                         <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item navtext">
                                         <a class="nav-link active text-light" aria-current="page"
                                             href="#">Habilidades</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item navtext">
                                         <a class="nav-link active text-light" aria-current="page" href="#">Proyectos</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item navtext">
                                         <a class="nav-link active text-light" aria-current="page" href="#">Cotáctame</a>
                                     </li>
                                 </ul>
@@ -54,9 +60,17 @@
                     </div>
                     <div class="row">
                         <!-- Presentación -->
-                        <div class="col-8 text-start presentacion">
+                        <div class="col-8 text-start presentacion container">
                             <h1 class="desarrolladora text-light ">DESARROLLADORA <br>JAVA FULLSTACK Jr.</h1>
                             <h3 class="miNombre text-light">Daniela Heredia Tolumes</h3>
+                            <div class="container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-geo-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                </svg>
+
+                            </div>
                             <p class="miDescripcion text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Nisi
                                 temporibus libero voluptate aliquam sequi nobis, aut nam eum maxime voluptates expedita
@@ -88,13 +102,26 @@
                                         d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
                                 </svg>
                             </a>
-                            <!-- CV -->
-                            <button type="button" class="btn btn-sm text-light"
-                                style="background-color: #B4016C; border: 1px solid #663E4D; margin:20px">Descargar
-                                CV</button>
+                            <!--  Boton cv-->
+                            <div class="button" data-tooltip="Size: 20Mb">
+                                <div class="button-wrapper">
+                                    <div class="text">Descargar CV</div>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                                            width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                                            viewBox="0 0 24 24">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2"
+                                                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="col-4 text-end">
-                            <img src="./src/img/DHT.png" alt="">
+                            <img src="./src/img/DHT.png" alt="" class="img-fluid ">
                         </div>
                     </div>
                 </div>
@@ -106,7 +133,7 @@
 
     <main>
         <!-- ****** habilidades ****** -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col  text-center">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
@@ -256,10 +283,22 @@
 
     <!-- ****** FOOTER ***** -->
 
-    <footer class="py-4 footer-bg">
-        <div class=" text-center ">
-            <button type="button" class="btn btn-sm text-light"
-                style="background-color: #B4016C; border: 1px solid #663E4D; margin:20px">Descargar CV</button>
+    <footer class="py-4 footer-bg bottom">
+        <!--  Boton cv-->
+        <div class="button text-center btnFooter" data-tooltip="Size: 20Mb">
+            <div class="button-wrapper">
+                <div class="text">Descargar CV</div>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                        width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17">
+                        </path>
+                    </svg>
+                </span>
+            </div>
         </div>
         <div class="container text-center">
             <!-- linkedin -->

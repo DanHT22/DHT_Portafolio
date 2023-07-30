@@ -1,56 +1,179 @@
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Estandarizar valores rem */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+p {
+    font-size: 1.5rem;
+}
+
 /* navBar */
-.navbar{
+.navbar {
     background-color: black;
     padding: 0px 0px 0px 0px;
 }
 
 #navbarNav {
-    padding-top: 30px;
+    padding-top: 3rem;
     padding-left: 4px;
 }
 
-a{
+.navtext {
+    font-size: 1.5rem;
+}
+
+a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-family: 'Handlee', cursive;
 }
 
-.desarrolladora, .miNombre, .miDescripcion {
-    padding-top: 15px;
-    padding-left: 10px;
+.desarrolladora {
+    font-size: 4rem;
 }
 
-p{
+.miNombre {
+    font-size: 2.5rem;
+}
+
+.desarrolladora,
+.miNombre,
+.miDescripcion {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+p {
     text-align: justify;
 }
 
-.bi-linkedin{
-    margin-left: 10px;
+/* ------ ICONOS ----- */
+.bi-linkedin {
+    margin-left: 1rem;
 }
 
-.bi-linkedin:hover{
+.bi-linkedin:hover {
     color: #6ac3f3;
 }
 
-.bi{
-    margin-right: 15px;
+.bi {
+    margin-right: 1.5rem;
     color: azure;
 }
 
-.bi-github:hover{
+.bi-github:hover {
     color: #C8A7E7;
 }
 
-.bi-envelope-fill:hover{
+.bi-envelope-fill:hover {
     color: #F4BD46;
 }
 
+/* ------ BOTON CV ------ */
+.button {
+    /* tamaño transicion*/
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 30px;
+    --tooltip-color: #fff;
+    width: 10rem;
+    height: 3.5rem;
+    background-color:#B4016C ;
+    position:relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Montserrat";
+    font-size: 1.3rem;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,
+.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper,
+.text,
+.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+
+.text {
+    top: 0
+}
+
+.text,
+.icon {
+    transition: top 0.5s;
+}
+
+.icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.button:hover {
+    background: #f4a21d;
+}
+
+.btnFooter{
+    margin-left: 46%;
+    margin-bottom: 1rem;
+}
+
+/* transición entre el texto y el icono */
+.button:hover .text {
+    top: -100%;
+}
+
+.button:hover .icon {
+    top: 0;
+}
+
+/*  ----- IMAGEN PRESENTACIÓN */
 img {
     width: 20rem;
     padding: 0;
@@ -59,29 +182,28 @@ img {
 
 /* Habilidades */
 
-main{
-    padding-left: 20px;
-    padding-right: 20px;
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-h5{
-    font-weight:900;
-    padding-bottom: 10px;
+h5 {
+    font-weight: 900;
+    padding-bottom: 1rem;
 }
 
 /* carrusel */
 
-.frases{
-    padding: 20px;
+.frases {
+    padding: 2rem;
 }
 
 /* Footer */
-footer{
+footer {
     background-color: black;
     padding: 0px 0px 0px 0px;
 }
 
-.pFooter{
-    padding: 10px;
+.pFooter {
+    padding: 1rem;
 }
-
