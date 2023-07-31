@@ -123,6 +123,10 @@ btnEnviar.addEventListener("click", function (e) {
             showConfirmButton: false,
             timer: 1500
         })
+        txtNombre.value = "";
+        txtApellido.value = "";
+        txtEmail.value = "";
+        txtMensaje.value = "";
     } else {
 
     }
