@@ -1,0 +1,81 @@
+/* ==== Variables ===== */
+:root{
+    --header-height: 3rem;
+
+    --color-rosa:#B4016C;
+    --color-negro:#090909;
+
+    /* margenes */
+    /* .25rem = 4px, 0.5rem = 8px, 0.75rem = 12px 1rem = 16px*/
+    --mb-0-25:.25rem;
+    --mb-0-5:5rem;
+    --mb-0-75:.75rem;
+    --mb-1:1rem;
+    --mb-1-5:1.5rem;
+    --mb-2:2rem;
+    --mb-2-5:2.5rem;
+    --mb-3:3rem;
+
+    /* z index */
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:100;
+}
+
+/* ======= Tamaño Letra ====== */
+/* Tamaño de letra responsivo  */
+@media screen and (min-width: 968px){
+    :root{
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.875rem;
+        --samller-font-size: 0.813rem;
+    }
+    
+}
+
+/* ==== Estilo Base ==== */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--normal-font-size);
+}
+
+ul{
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+}
+
+section{
+    padding: 2rem 0 4rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--samller-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
