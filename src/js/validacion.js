@@ -93,7 +93,7 @@ btnEnviar.addEventListener("click", function (e) {
 
     //Validar EMAIl
     if (!txtEmail.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Mensaje </strong> no es válido</br>`);
+        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Correo Electrónico </strong> no es válido</br>`);
         // habilitar que se muestre el mensaje
         alertValidaciones.style.display = "block"
         // marcar el campo del error
