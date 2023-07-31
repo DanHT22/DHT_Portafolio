@@ -1,4 +1,4 @@
-// ******** ANIMACIÓN DEL TÍTULO
+// ******** ANIMACIÓN DEL TÍTULO ***********
 const typed = new Typed (".typed", {
     strings: [
         '<h1 class="desarrolladora">JAVA FULLSATCK Jr.</h1>', 
