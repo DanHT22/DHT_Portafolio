@@ -1,3 +1,7 @@
+:root{
+    --color-rosa:#B4016C;
+}
+
 .cont_Cards {
     padding: 5rem;
     margin-top: 4rem;
@@ -21,7 +25,7 @@
 
 /* Desliza la cards y se ve el contenido dentro de ella */
 .cont_Cards .card:hover {
-    height: 400px;
+    height: 300px;
 }
 
 /* manda la imagen hacia arriba */
@@ -65,7 +69,9 @@
 /* Hover del texto  */
 .cont_Cards:hover .card:hover .content {
     top: 130px;
-    height: 200px;
+    height: auto;
+    color: var(--color-rosa);
+    font-weight: 800;
 }
 
 .content_habilidades{

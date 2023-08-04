@@ -13,8 +13,17 @@ form{
     padding: 3rem;
 }
 
+.form-border{
+    border-radius: 1px solid rgb(107, 31, 43);
+}
 
-
+/* Animación  */
+.animacion-email{
+    animation-name: animacion-email;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
 
 
 

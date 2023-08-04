@@ -6,11 +6,13 @@
     --color-rosa:#B4016C;
 }
 
-/* .col{
+.row{
     border: 1px solid red;
-} */
+}
 
-/* Estandarizar valores rem */
+.col{
+    border: 1px solid red;
+}
 
 html {
     font-size: 62.5%;
@@ -52,7 +54,7 @@ header{
 }
 
 .nav-link:hover{
-    border-bottom: 1px solid var(--color-rosa);
+    border-bottom: 4px solid var(--color-rosa);
 }
 
 a {

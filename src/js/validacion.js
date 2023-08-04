@@ -9,8 +9,15 @@ let txtApellido = document.getElementById("Apellido");
 let txtEmail = document.getElementById("email");
 let txtMensaje = document.getElementById("mensaje");
 
-let alertValidacionesTexto = document.getElementById("alertValidacionesTexto");
-let alertValidaciones = document.getElementById("alertValidaciones");
+
+let alertValidacionesTextoNombre = document.getElementById("alertValidacionesTextoNombre");
+let alertValidacionesNombre = document.getElementById("alertValidacionesNombre");
+let alertValidacionesTextoApellido = document.getElementById("alertValidacionesTextoApellido");
+let alertValidacionesApellido = document.getElementById("alertValidacionesApellido");
+let alertValidacionesTextoEmail = document.getElementById("alertValidacionesTextoEmail");
+let alertValidacionesEmail = document.getElementById("alertValidacionesEmail");
+let alertValidacionesTextoMensaje = document.getElementById("alertValidacionesTextoMensaje");
+let alertValidacionesMensaje = document.getElementById("alertValidacionesMensaje");
 
 let isValid = true;
 let valEmail = false;
@@ -31,8 +38,14 @@ btnReset.addEventListener("click", function (e) {
     txtMensaje.value = "";
 
     //Borrar alertas
-    alertValidacionesTexto.innerHTML = "";
-    alertValidaciones.style.display = "none";
+    alertValidacionesTextoNombre.innerHTML = "";
+    alertValidacionesNombre.style.display = "none";
+    alertValidacionesTextoApellido.innerHTML = "";
+    alertValidacionesApellido.style.display = "none";
+    alertValidacionesTextoEmail.innerHTML = "";
+    alertValidacionesEmail.style.display = "none";
+    alertValidacionesTextoMensaje.innerHTML = "";
+    alertValidacionesMensaje.style.display = "none";
 
     // Borra bordes de error
     txtNombre.style.border = "";
@@ -54,8 +67,14 @@ btnEnviar.addEventListener("click", function (e) {
     isValid = true;
 
     // que los campos esten sin alertas ni errores
-    alertValidacionesTexto.innerHTML = "";
-    alertValidaciones.style.display = "none";
+    alertValidacionesTextoNombre.innerHTML = "";
+    alertValidacionesNombre.style.display = "none";
+    alertValidacionesTextoApellido.innerHTML = "";
+    alertValidacionesApellido.style.display = "none";
+    alertValidacionesTextoEmail.innerHTML = "";
+    alertValidacionesEmail.style.display = "none";
+    alertValidacionesTextoMensaje.innerHTML = "";
+    alertValidacionesMensaje.style.display = "none";
     txtNombre.style.border = "";
     txtApellido.style.border = "";
     txtEmail.style.border = "";
@@ -68,10 +87,10 @@ btnEnviar.addEventListener("click", function (e) {
     txtMensaje.value = txtEmail.value.trim();
 
     // validar Nombre
-    if (txtNombre.value.length < 3) {
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Nombre </strong> no es correcto</br>`);
+    if (txtNombre.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtNombre.value.length < 3)) {
+        alertValidacionesTextoNombre.insertAdjacentHTML("beforeend", `El <strong> Nombre </strong> no es correcto</br>`);
         // habilitar que se muestre el mensaje
-        alertValidaciones.style.display = "block"
+        alertValidacionesNombre.style.display = "block"
         // marcar el campo del error
         txtNombre.style.border = "solid 2px #B4016C";
         isValid = false;
@@ -80,10 +99,10 @@ btnEnviar.addEventListener("click", function (e) {
     }
 
     // validar Apellido
-    if (txtApellido.value.length < 3) {
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Apellido </strong> no es correcto</br>`);
+    if (txtApellido.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtApellido.value.length < 3)) {
+        alertValidacionesTextoApellido.insertAdjacentHTML("beforeend", `El <strong> Apellido </strong> no es correcto</br>`);
         // habilitar que se muestre el mensaje
-        alertValidaciones.style.display = "block"
+        alertValidacionesApellido.style.display = "block"
         // marcar el campo del error
         txtApellido.style.border = "solid 2px #B4016C";
         isValid = false;
@@ -93,9 +112,9 @@ btnEnviar.addEventListener("click", function (e) {
 
     //Validar EMAIl
     if (!txtEmail.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Correo Electrónico </strong> no es válido</br>`);
+        alertValidacionesTextoEmail.insertAdjacentHTML("beforeend", `El <strong> Correo Electrónico </strong> no es válido</br>`);
         // habilitar que se muestre el mensaje
-        alertValidaciones.style.display = "block"
+        alertValidacionesEmail.style.display = "block"
         // marcar el campo del error
         txtEmail.style.border = "solid 2px #B4016C";
         isValid = false;
@@ -105,9 +124,9 @@ btnEnviar.addEventListener("click", function (e) {
 
     // validar Mensaje
     if (txtMensaje.value.length < 3) {
-        alertValidacionesTexto.insertAdjacentHTML("beforeend", `El <strong> Mensaje </strong> no es válido</br>`);
+        alertValidacionesTextoMensaje.insertAdjacentHTML("beforeend", `El <strong> Mensaje </strong> no es válido</br>`);
         // habilitar que se muestre el mensaje
-        alertValidaciones.style.display = "block"
+        alertValidacionesMensaje.style.display = "block"
         // marcar el campo del error
         txtMensaje.style.border = "solid 2px #B4016C";
         isValid = false;
