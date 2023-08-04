@@ -58,7 +58,7 @@
                                     </li>
                                     <li class="nav-item navtext">
                                         <a class="nav-link active text-light" aria-current="page"
-                                            href="./src/html/contactame.html">Cotáctame</a>
+                                            href="./src/html/contactame.html" >Cotáctame</a>
                                     </li>
                                 </ul>
                             </div>
@@ -96,7 +96,7 @@
                         ad ipsa.</p>
                 </div>
                 <!-- Imagen -->
-                <div class="col col-md-4 text-end">
+                <div class="col col-md-4 text-end ">
                     <img src="./src/img/DHT.png" alt="">
                 </div>
                 <div class="row">
@@ -105,7 +105,7 @@
                         <ul class="nav nav-pills">
                             <li>
                                 <!-- linkedin -->
-                                <a href="https://www.linkedin.com/in/daniela-heredia-t/">
+                                <a href="https://www.linkedin.com/in/daniela-heredia-t/" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor"
                                         class="bi bi-linkedin " viewBox="0 0 16 16">
                                         <path
@@ -115,7 +115,7 @@
                             </li>
                             <li>
                                 <!-- gitHub -->
-                                <a href="https://github.com/DanHT22">
+                                <a href="https://github.com/DanHT22" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">
                                         <path
@@ -125,7 +125,7 @@
                             </li>
                             <li>
                                 <!-- mail -->
-                                <a href="">
+                                <a href="" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35" fill="currentColor"
                                         class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path
@@ -206,7 +206,7 @@
     <main>
 
         <!-- ********* Cards Habilidades ********* -->
-        <div class="container-xl text-center cont_Cards">
+        <div class="container text-center cont_Cards">
             <div class="row text-center ">
                 <div class="col cont_Cards text-center">
                     <div class="card text-center">
@@ -421,12 +421,12 @@
     </div>
 
     <!-- ******FORMULARIO CONTACTO *******-->
-    <div class="container-xl">
+    <div class="container">
         <div class="row">
             <!-- formulario -->
-            <div class=" col text-start ">
+            <div class="col-md-7 text-start ">
                 <div class="container text-center form-container">
-                    <h2>Contáctame</h2>
+                    <h2 class="texto-form">Contáctame</h2>
 
                     <!--  ********** Formulario  **********  -->
                     <!-- Alertas -->
@@ -437,12 +437,9 @@
                         <fieldset>
                             <!-- Nombre -->
                             <div class="mb-3 form-group">
-                                <label for="Nombre" class="form-label">Nombre</label>
+                                <label for="Nombre" class="form-label texto-form">Nombre</label>
                                 <input type="text" class="form-control text-center" id="Nombre" name="Nombre"
                                     placeholder="Ingresa tu nombre" value="" required>
-                                <div class="invalid-feedback">
-                                    Nombre inválido
-                                </div>
                             </div>
                             <div class="alert alert-danger fade show" style="display:none;" role="alert"
                                 id="alertValidacionesNombre">
@@ -450,12 +447,9 @@
                             </div>
                             <!-- Apellido -->
                             <div class="mb-3 form-group">
-                                <label for="Apellido" class="form-label">Apellido</label>
+                                <label for="Apellido" class="form-label texto-form">Apellido</label>
                                 <input type="text" class="form-control text-center" id="Apellido" name="Apellido"
                                     placeholder="Ingresa tu Apellido" value="" required>
-                                <div class="invalid-feedback">
-                                    Apellido inválido
-                                </div>
                             </div>
                             <div class="alert alert-danger fade show" style="display:none;" role="alert"
                                 id="alertValidacionesApellido">
@@ -463,12 +457,9 @@
                             </div>
                             <!-- Email -->
                             <div class="mb-3 form-group">
-                                <label for="email" class="form-label">Correo electrónico</label>
+                                <label for="email" class="form-label texto-form">Correo electrónico</label>
                                 <input type="email" class="form-control text-center form-border" id="email" name="email"
                                     placeholder="Ingresa tu correo electrónico" value="" required>
-                                <div class="invalid-feedback">
-                                    Correo electrónico invalido
-                                </div>
                             </div>
                             <div class="alert alert-danger fade show" style="display:none;" role="alert"
                                 id="alertValidacionesEmail">
@@ -476,15 +467,13 @@
                             </div>
                             <!-- Text Area -->
                             <div class="mb-3 form-group">
-                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <label for="mensaje" class="form-label texto-form">Mensaje</label>
                                 <textarea class="form-control" id="mensaje" rows="5"></textarea>
-                                <div class="invalid-feedback">
-                                    Mensaje invalido
-                                </div>
                             </div>
-                            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidacionesMensaje">
+                            <div class="alert alert-danger fade show" style="display:none;" role="alert"
+                                id="alertValidacionesMensaje">
                                 <p id="alertValidacionesTextoMensaje"></p>
-                              </div>
+                            </div>
 
                             <!-- Boton -->
                             <button type="submit" class="btn btn-info" id="btnEnviar">Enviar</button>
@@ -494,7 +483,7 @@
                 </div>
             </div>
             <!-- Imagen -->
-            <div class="col text-center ">
+            <div class="col-md-5 text-center ">
                 <div class="animacion-email">
                     <img src="/src/img/email.png" alt="" class="img-fluid">
                 </div>
@@ -523,7 +512,7 @@
         </div>
         <div class="container text-center">
             <!-- linkedin -->
-            <a href="https://www.linkedin.com/in/daniela-heredia-t/">
+            <a href="https://www.linkedin.com/in/daniela-heredia-t/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-linkedin"
                     viewBox="0 0 16 16">
                     <path
@@ -531,7 +520,7 @@
                 </svg>
             </a>
             <!-- gitHub -->
-            <a href="https://github.com/DanHT22">
+            <a href="https://github.com/DanHT22" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-github"
                     viewBox="0 0 16 16">
                     <path
@@ -539,12 +528,13 @@
                 </svg>
             </a>
             <!-- Mail -->
-            <a href="">
+            <a href="" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" fill="currentColor" class="bi bi-envelope-fill"
                     viewBox="0 0 16 16">
                     <path
                         d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
                 </svg>
+
             </a>
         </div>
         <div class="container-fluid">
