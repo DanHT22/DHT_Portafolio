@@ -2,8 +2,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-:root{
-    --color-rosa:#B4016C;
+:root {
+    --color-rosa: #B4016C;
 }
 
 
@@ -31,7 +31,7 @@ p {
     padding: 0px 0px 0px 0px;
 }
 
-header{
+header {
     background-color: black;
     padding: 0px 0px 0px 0px;
 }
@@ -47,7 +47,7 @@ header{
     padding-bottom: 1rem;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border-bottom: 4px solid var(--color-rosa);
 }
 
@@ -55,7 +55,7 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -84,7 +84,7 @@ h1 {
 
 
 
-.miDescripcion{
+.miDescripcion {
     padding-bottom: 1.5rem;
     padding-left: 1rem;
 }
@@ -93,14 +93,14 @@ p {
     text-align: justify;
 }
 
-span{
+span {
     color: azure;
     font-size: 1.6rem;
 }
 
 /* ------ ICONOS ----- */
 
-.bi-geo-fill{
+.bi-geo-fill {
     margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
@@ -115,7 +115,7 @@ span{
     color: #6ac3f3;
 }
 
-.bi-github{
+.bi-github {
     margin-right: 3rem;
 }
 
@@ -131,7 +131,7 @@ span{
     color: #F4BD46;
 }
 
-.iconos{
+.iconos {
     margin-bottom: 3rem;
 }
 
@@ -144,8 +144,8 @@ span{
     --tooltip-color: #fff;
     width: 10rem;
     height: 3.5rem;
-    background-color:var(--color-rosa);
-    position:relative;
+    background-color: var(--color-rosa);
+    position: relative;
     text-align: center;
     border-radius: 0.45em;
     font-family: "Montserrat";
@@ -153,13 +153,13 @@ span{
     margin-left: 3rem;
 }
 
-.button::after { 
+.button::after {
     content: '';
     width: 0;
     height: 0;
     border: 10px solid transparent;
     border-top-color: var(--tooltip-color);
-    
+
 }
 
 .button::after,
@@ -212,7 +212,7 @@ span{
     background: #f4a21d;
 }
 
-.btnFooter{
+.btnFooter {
     margin-left: 46%;
     margin-bottom: 1rem;
 }
@@ -246,4 +246,23 @@ footer {
 
 .pFooter {
     padding: 1rem;
+}
+
+
+.typed-cursor {
+    display: none;
+    /* Oculta el cursor */
+}
+
+.typed-container {
+   
+
+    
+}
+
+@media (min-width: 320px) {
+    /* Ajusta el tamaño de fuente para pantallas más grandes */
+    .typed-container {
+        width: auto;
+    }
 }
