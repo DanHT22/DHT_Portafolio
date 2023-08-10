@@ -21,9 +21,6 @@ p {
     font-size: 1.5rem;
 }
 
-/* div{
-    border: 1px solid red ;
-} */
 
 /* ======= navBar ======= */
 .navbar {
@@ -42,7 +39,7 @@ header {
 }
 
 .navtext {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-right: 3rem;
     padding-bottom: 1rem;
 }
@@ -82,12 +79,10 @@ h1 {
     padding-left: 1rem;
 }
 
-
-
 .miDescripcion {
     padding-bottom: 1.5rem;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height:3rem;
 
 }
@@ -96,10 +91,11 @@ p {
     text-align: justify;
 }
 
-span {
-    color: azure;
-    font-size: 1.6rem;
+span{
+    color: aliceblue;
+    font-size: 2rem;
 }
+
 
 /* ------ ICONOS ----- */
 
