@@ -87,6 +87,9 @@ h1 {
 .miDescripcion {
     padding-bottom: 1.5rem;
     padding-left: 1rem;
+    font-size: 1.5rem;
+    line-height:3rem;
+
 }
 
 p {
@@ -254,11 +257,6 @@ footer {
     /* Oculta el cursor */
 }
 
-.typed-container {
-   
-
-    
-}
 
 @media (min-width: 320px) {
     /* Ajusta el tamaño de fuente para pantallas más grandes */
