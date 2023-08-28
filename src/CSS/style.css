@@ -12,25 +12,14 @@
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset & Helpers */
 body {
     font-family: var(--texto);
     color: var(--c-body);
     line-height: 1.7;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1,.h1, h2, .h2, h3, .h3, h4, .h4,
+h5, .h5,h6,.h6 {
     font-weight: 700;
     color: var(--color-rosa);
 }
@@ -143,7 +132,6 @@ p {
     text-align: justify;
 }
 
-/* Btn */
 .btn {
     padding: 10px 24px;
     border-radius: 0;
@@ -180,7 +168,7 @@ span{
     color:#cd7bac;
 }
 
-/* ------ ICONOS ----- */
+/*  ICONOS */
 
 .bi-geo-fill {
     margin-top: 2rem;
@@ -212,14 +200,14 @@ span{
 }
 
 
-/* Home */
+/* Principal */
 #home {
     background-image: url(../img/fondo.png);
     background-position: right;
     background-size:cover;
 }
 
-/* Services */
+/* Habilidades */
 .service-icon {
     font-size: 28px;
     display: inline-flex;
@@ -236,7 +224,7 @@ span{
     font-weight: 700;
 }
 
-/* Project */
+/* Proyectos */
 .project {
     overflow: hidden;
     position: relative;
@@ -267,32 +255,7 @@ span{
     transform: translateY(-100%);
 }
 
-
-/* Resume */
-.eduexp {
-    position: relative;
-}
-
-.eduexp::before {
-    content: '';
-    height: 100%;
-    width: 1px;
-    background-color: rgba(var(--color-rosa-rgb), 0.4);
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.eduexp::after {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background-color: var(--color-rosa);
-    position: absolute;
-    left: -7px;
-    top: 0;
-}
-
+/* Formulario contáctame */
 #contact .form-control {
     border-radius: 0;
 }
