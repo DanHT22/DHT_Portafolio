@@ -67,7 +67,7 @@ btnEnviar.addEventListener("click", function (e) {
     txtNombre.value = txtNombre.value.trim();
     txtApellido.value = txtApellido.value.trim();
     txtEmail.value = txtEmail.value.trim();
-    txtMensaje.value = txtEmail.value.trim();
+    txtMensaje.value = txtMensaje.value.trim();
 
     // validar Nombre
     if (!txtNombre.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtNombre.value.length < 3)) {
@@ -106,7 +106,7 @@ btnEnviar.addEventListener("click", function (e) {
     }
 
     // validar Mensaje
-    if (txtMensaje.value.length < 50) {
+    if (txtMensaje.value.length < 20) {
         // habilitar que se muestre el mensaje
         alertValidacionesMensaje.style.display = "block"
         // marcar el campo del error
