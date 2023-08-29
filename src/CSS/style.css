@@ -101,6 +101,10 @@ img {
     box-shadow: none;
 }
 
+.aNav{
+    font-size: 1.4rem;
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 16px;
@@ -111,16 +115,10 @@ img {
 .navbar .navbar-nav .nav-link {
     font-weight: 700;
     color: white;
-    
 }
 
 .nav-link:hover {
     border-bottom: 4px solid var(--color-rosa);
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active  {
-    color: var(--color-rosa);
 }
 
 .navbar-brand {
@@ -152,6 +150,8 @@ p {
     border-color: var(--color-rosa);
 }
 
+/* Typed */
+
 span{
     color: white;
 }
@@ -161,11 +161,14 @@ span{
     margin-bottom: 15px;
 }
 
-.typed{
+.typed {
     font-family: var(--titulo);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-style: normal;
-    color:#cd7bac;
+    background: linear-gradient(45deg, var(--color-rosa), var(--c-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /*  ICONOS */
@@ -175,28 +178,26 @@ span{
     margin-bottom: 3rem;
 }
 
+.bi{
+    color: var(--c-light);
+}
 .bi-linkedin {
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 
-.bi-linkedin:hover {
-    color: #6ac3f3;
+.bi-linkedin:hover path {
+    fill: var(--color-rosa);
 }
 
-.bi {
-    color: white;
+.bi-github {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 
-.bi-github:hover {
-    color: #C8A7E7;
-}
-
-.bi-envelope-fill:hover {
-    color: #F4BD46;
-}
-
-.iconos {
-    margin-bottom: 3rem;
+.bi-github:hover path {
+    fill: var(--color-rosa);
+    
 }
 
 
@@ -273,6 +274,10 @@ input.form-control {
     font-size: 12px;
     color: var(--color-rosa);
     display: none;
+}
+
+.btn_padding{
+    margin: 5px;
 }
 
 /* Footer */
