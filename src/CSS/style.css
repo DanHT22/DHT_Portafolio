@@ -256,17 +256,23 @@ span{
 }
 
 /* Formulario contáctame */
-#contact .form-control {
+.form-control {
     border-radius: 0;
 }
 
-#contact .form-control:focus {
+.form-control:focus {
     box-shadow: none;
     border-color: var(--color-rosa);
 }
 
-#contact input.form-control {
+input.form-control {
     height: 44px;
+}
+
+.alerta{
+    font-size: 12px;
+    color: var(--color-rosa);
+    display: none;
 }
 
 /* Footer */
