@@ -181,13 +181,10 @@ span{
 .bi{
     color: var(--c-light);
 }
+
 .bi-linkedin {
     margin-right: 1rem;
     margin-bottom: 2rem;
-}
-
-.bi-linkedin:hover path {
-    fill: var(--color-rosa);
 }
 
 .bi-github {
@@ -197,7 +194,10 @@ span{
 
 .bi-github:hover path {
     fill: var(--color-rosa);
-    
+}
+
+.bi-linkedin:hover path {
+    fill: var(--color-rosa);
 }
 
 
