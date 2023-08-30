@@ -16,9 +16,9 @@ AOS.init({
 // ANIMACIÓN TEXTO 
 const typed = new Typed('.typed', {
     strings: ['DESARROLLADORA WEB', 'FRONTEND JUNIOR'],
-    typeSpeed: 50,
+    typeSpeed: 80,
     backSpeed: 50,
-    backDelay: 1000,
+    backDelay: 1500,
     loop: true
 });
 
