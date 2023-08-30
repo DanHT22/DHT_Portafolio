@@ -35,8 +35,8 @@ img {
 }
 
 .section-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .nombre {
@@ -94,6 +94,11 @@ img {
     background-color: var(--color-rosa);
 }
 
+.navbar-expand-lg {
+    background-color: var(--color-negro);
+    display:flex;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -122,6 +127,7 @@ img {
     font-size: 14px;
     font-weight: 700;
 }
+
 
 p {
     text-align: justify;
@@ -154,13 +160,13 @@ span{
 }
 
 .typed-container{
-    margin-top: 35px;
+    margin-top: 120px;
     margin-bottom: 15px;
 }
 
 .typed {
     font-family: var(--titulo);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-style: normal;
     background: linear-gradient(45deg, var(--color-rosa), var(--c-light));
     -webkit-background-clip: text;
@@ -197,13 +203,26 @@ span{
     fill: var(--color-rosa);
 }
 
+.iconos{
+    margin-bottom: 30px;
+}
+
 
 /* Principal */
 #home {
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo-17.png);
     background-position: right;
     background-size:cover;
 }
+
+.miDescripcion{
+    color: var(--c-light);
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+
+
 
 /* Habilidades */
 .service-icon {

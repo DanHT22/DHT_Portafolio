@@ -40,12 +40,12 @@
                     <div class="col-xxl">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                            aria-label="Toggle navigation" >
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse " id="navbarNav">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item navtext">
+                        <div class="collapse navbar-collapse collapsing-bg" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item navtext navbar-margin-l rounded">
                                     <a class="nav-link active text-light aNav" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item navtext">
@@ -75,15 +75,25 @@
     <!-- Home -->
     <section id="home" class="d-flex align-items-center min-vh-100">
         <div class="container">
+            <div class="typed-container container">
+                <h1 class="textTyped"><span class="typed"></span></h1>
+            </div>
             <div class="row">
                 <div class="col-md-8">
-                    <div class="typed-container">
-                        <h1><span class="typed"></span></h1>
-                    </div>
-                    <h3 class="display-2 fw-bold" data-aos="fade-up">
-                        <span class="nombre">Daniela Heredia Tolumes</span>
+                    <h3 class="display-2 nombre container" data-aos="fade-up">
+                        Daniela Heredia Tolumes
                     </h3>
+                    <div class="col-md-12 container">
+                        <p class="miDescripcion">
+                            Como entusiasta del desarrollo web, me apasiona crear interfaces atractivas e intuitivas que 
+                            proporcionen una  gran experiencia de usuario (UX/UI). 
+                            <br><br>
+                            He trabajado bajo  la metodología  ágil Scrum y la filosofía Design Thinking en diversos variedad de proyectos.
+                        </p>
+                    </div>
                     <div>
+                    </div>
+                    <div class="logoubi container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                             class="bi bi-geo-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -91,8 +101,8 @@
                         </svg>
                         <span class="aNav">CDMX, México</span>
                     </div>
-                    <div class="row">
-                        <div class="col-xxl text-start iconos">
+                    <div class="row container" >
+                        <div class="col-md-8 text-start iconos">
                             <ul class="nav nav-pills">
                                 <li>
                                     <!-- linkedin -->
@@ -104,8 +114,8 @@
                                         </svg>
                                     </a>
                                 </li>
+                                <!-- gitHub -->
                                 <li>
-                                    <!-- gitHub -->
                                     <a href="https://github.com/DanHT22" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor"
                                             class="bi bi-github" viewBox="0 0 16 16">
@@ -114,14 +124,13 @@
                                         </svg>
                                     </a>
                                 </li>
+                                <li>
+                                    <button class="btn btn-brand" id="btnDownloadCV">Descargar CV</button>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-9 text-end">
                         </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-delay="200">
-                        <button class="btn btn-brand" id="btnDownloadCV">Descargar CV</button>
                     </div>
                 </div>
             </div>
@@ -129,120 +138,108 @@
     </section>
 
     <!-- Sobre mi -->
-    <section id="sobremi" class="section-padding section-connector">
+    <section id="sobremi" class="section-padding section-connector min-vh-100">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="setion-title text-center container" data-aos="fade-up" data-aos-delay="100">
-                        <h1>Sobre mi</h1>
-                        <p class="miDescripcion">
-                            Soy una desarrolladora web apasionada por crear aplicaciones implementando tecnologías como
-                            HTML5, CSS, Bootstrap y Javascript. Utilizo un enfoque centrado en el usuario para crear una
-                            interfaz intuitivas y atractivas que mejoren la experiencia de los usuarios (UX/UI). Cuento
-                            conconocimientos básicos en MySQL, Java y R. Utilizo mis habilidades de liderazgo,
-                            planificación, comunicación y trabajo en equipo para resolver problemas y garantizar el
-                            éxito de los proyectos.
-                        </p>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
             <div id="habilidades">
-           
                 <div class="row gy-4 text-center">
-                    <h4>Tecnologías:</h4>
+                    <h1 data-aos="fade-up" data-aos-delay="100">Tecnologías</h1>
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service py-5 px-4">
+                            <div class="service-icon">
+                                <img src="./src/icons/html2.png" alt="">
+                            </div>
+                            <p class="text-center" style="color:#E66B12;">HTML 5</p>
+                        </div>
+                    </div>
                     <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/html.png" alt="">
+                                <img src="./src/icons/css2.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#0077BB;">CSS 3</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/css.png" alt="">
+                                <img src="./src/icons/bootstrap3.png" alt="">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service py-5 px-4">
-                            <div class="service-icon">
-                                <img src="./src/icons/bootstrap.png" alt="">
-                            </div>
+                            <p class="text-center" style="color:#8214F5;">Bootstrap</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/js-2.png" alt="">
+                                <img src="./src/icons/javascript.png" alt="">
                             </div>
+                            <p class="text-center" style="color:#f4c711;">Javascript</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/java-3.png" alt="">
+                                <img src="./src/icons/java1.png" alt="">
                             </div>
+                            <p class="text-center" style="color:#1465BE;">Java 17</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/r.png" alt="">
+                                <img src="./src/icons/R1.png" alt="">
                             </div>
+                            <p class="text-center" style="color:#939398">R</p>
                         </div>
                     </div>
                 </div>
-                <h4 class="text-center">Herramientas:</h4>
+                <h1 class="text-center" data-aos="fade-up" data-aos-delay="600">Herramientas</h1>
                 <div class="row gy-4 text-center">
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service py-5 px-4 ">
                             <div class="service-icon">
-                                <img src="./src/icons/figma-2.png" alt="">
+                                <img src="./src/icons/figma1.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color: #66BB6F;">Figma</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service py-5 px-4 ">
                             <div class="service-icon">
-                                <img src="./src/icons/git-2.png" alt="">
+                                <img src="./src/icons/git.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#F45121;">Git</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service py-5 px-4 ">
                             <div class="service-icon">
                                 <img src="./src/icons/visualStudio.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#0088CE;">Visual Studio Code</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service py-5 px-4 ">
                             <div class="service-icon">
-                                <img src="./src/icons/trello.png" alt="">
+                                <img src="./src/icons/trello3.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#1B88E2;">Trello</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
-                                <img src="./src/icons/Mysql2.png" alt="">
+                                <img src="./src/icons/Mysql-2.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#00758E; margin-top: 10px;">MySql</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-2 col-sm-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service py-5 px-4">
                             <div class="service-icon">
                                 <img src="./src/icons/eclipse2.png" alt="">
                             </div>
-                            <h5 class="mt-4"></h5>
+                            <p class="text-center" style="color:#2B2254">Eclipse</p>
                         </div>
                     </div>
                 </div>
@@ -251,7 +248,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="section-padding section-connector container">
+    <section id="proyectos" class="section-padding section-connector container min-vh-100">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-delay="100">
