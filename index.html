@@ -302,7 +302,6 @@
                                 target="_blank">Link</a>
                                 
                         </div>
-                     
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
@@ -341,30 +340,30 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
-                    <form class="row g-3">
+                    <form class="row g-3" id="form">
                         <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" id="Nombre" name="Nombre">
                             <p class="alerta" id="alertValidacionesNombre"> El nombre ingreado no es valido, debe de
                                 contener al menos 3 caracteres.</p>
                         </div>
                         <div class="form-group col-md-4">
-                            <input type="text" class="form-control" placeholder="Apellido" id="Apellido">
+                            <input type="text" class="form-control" placeholder="Apellido" id="Apellido" name="Apellido">
                             <p class="alerta" id="alertValidacionesApellido"> El Apellido ingresado no es válido, debe
                                 de contener al menos 3 caracteres.</p>
                         </div>
                         <div class="form-group col-md-4">
-                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="email">
+                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" name="email">
                             <p class="alerta" id="alertValidacionesEmail"> El correo electrónico ingresado no es válido.
                             </p>
                         </div>
                         <div class="form-group col-md-12">
                             <textarea name="mensaje" class="form-control" placeholder="Escribe aqui tu mensaje" rows="4"
-                                id="mensaje"></textarea>
+                                id="mensaje" name="mensaje"></textarea>
                             <p class="alerta" id="alertValidacionesMensaje"> El Mensaje debe de contener al menos 20
                                 caracteres.</p>
                         </div>
                         <div class="form-group text-center col-md-12">
-                            <button class="btn btn-brand btn_padding" id="btnEnviar">Enviar</button>
+                            <input class="btn btn-brand btn_padding" type="submit" id="btnEnviar" value="Enviar" >
                             <button class="btn btn-brand btn_padding" id="btnReset">Limpiar</button>
                         </div>
                     </form>
@@ -412,7 +411,8 @@
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Smp -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('Egh_6uqLIqo17t134')</script>
 
 
 </body>

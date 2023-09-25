@@ -49,95 +49,102 @@ btnReset.addEventListener("click", function (e) {
 })//Fin de eveto btnReset ---------------------------
 
 // EVENTO PARA EL BTN ENVIAR 
-btnEnviar.addEventListener("click", function (e) {
-    e.preventDefault();
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    // que los campos esten sin alertas ni errores
-    alertValidacionesNombre.style.display = "none";
-    alertValidacionesApellido.style.display = "none";
-    alertValidacionesEmail.style.display = "none";
-    alertValidacionesMensaje.style.display = "none";
+       
 
-    txtNombre.style.border = "";
-    txtApellido.style.border = "";
-    txtEmail.style.border = "";
-    txtMensaje.style.border = "";
+        const serviceID = 'default_service';
+        const templateID = 'template_q96s6vs';
 
-    // trim para quitar espacios
-    txtNombre.value = txtNombre.value.trim();
-    txtApellido.value = txtApellido.value.trim();
-    txtEmail.value = txtEmail.value.trim();
-    txtMensaje.value = txtMensaje.value.trim();
+        // que los campos esten sin alertas ni errores
+        alertValidacionesNombre.style.display = "none";
+        alertValidacionesApellido.style.display = "none";
+        alertValidacionesEmail.style.display = "none";
+        alertValidacionesMensaje.style.display = "none";
 
-    // validar Nombre
-    if (!txtNombre.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtNombre.value.length < 3)) {
-        // habilitar que se muestre el mensaje
-        alertValidacionesNombre.style.display = "block"
-        // marcar el campo del error
-        txtNombre.style.border = "solid 2px #B4016C";
-        nombreVal = false;
-        errores ++;  
-    } else {
-        nombreVal = true;
-    }
+        txtNombre.style.border = "";
+        txtApellido.style.border = "";
+        txtEmail.style.border = "";
+        txtMensaje.style.border = "";
 
-    // validar Apellido
-    if (txtApellido.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtApellido.value.length < 3)) {
-        // habilitar que se muestre el mensaje
-        alertValidacionesApellido.style.display = "block"
-        // marcar el campo del error
-        txtApellido.style.border = "solid 2px #B4016C";
-        apellidoVal = false;
-        errores ++;  
-    } else {
-        apellidoVal = true;
-    }
+        // trim para quitar espacios
+        txtNombre.value = txtNombre.value.trim();
+        txtApellido.value = txtApellido.value.trim();
+        txtEmail.value = txtEmail.value.trim();
+        txtMensaje.value = txtMensaje.value.trim();
 
-    //Validar EMAIl
-    if (!txtEmail.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
-        // habilitar que se muestre el mensaje
-        alertValidacionesEmail.style.display = "block"
-        // marcar el campo del error
-        txtEmail.style.border = "solid 2px #B4016C";
-        emailVal=false;
-        errores ++;  
-    }else{
-        emailVal=true;
-    }
+        // validar Nombre
+        if (!txtNombre.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtNombre.value.length < 3)) {
+            // habilitar que se muestre el mensaje
+            alertValidacionesNombre.style.display = "block"
+            // marcar el campo del error
+            txtNombre.style.border = "solid 2px #B4016C";
+            nombreVal = false;
+            errores++;
+        } else {
+            nombreVal = true;
+        }
 
-    // validar Mensaje
-    if (txtMensaje.value.length < 20) {
-        // habilitar que se muestre el mensaje
-        alertValidacionesMensaje.style.display = "block"
-        // marcar el campo del error
-        txtMensaje.style.border = "solid 2px #B4016C";
-        mensajeVal = false;
-        errores ++;  
-    } else {
-        mensajeVal = true;
-    }
+        // validar Apellido
+        if (txtApellido.value.match(/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/) == true || (txtApellido.value.length < 3)) {
+            // habilitar que se muestre el mensaje
+            alertValidacionesApellido.style.display = "block"
+            // marcar el campo del error
+            txtApellido.style.border = "solid 2px #B4016C";
+            apellidoVal = false;
+            errores++;
+        } else {
+            apellidoVal = true;
+        }
 
-    if (nombreVal == true && apellidoVal == true && emailVal == true && mensajeVal == true) {
-        Email.send({
-            SecureToken: 'FADDEAF4ADA779B4CD87870052C17F2043782',
-            To: "tolumes.daniela@gmail.com",
-            From: txtEmail.value,
-            Subject: "Hola estimado",
-            Body: "Este es un mensaje de prueba"
-        }).then(
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Tu Mensaje ha sido enviado correctamente',
-            showConfirmButton: false,
-            timer: 1500
-        })  );
-        txtNombre.value = "";
-        txtApellido.value = "";
-        txtEmail.value = "";
-        txtMensaje.value = "";
-    } else {
+        //Validar EMAIl
+        if (!txtEmail.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
+            // habilitar que se muestre el mensaje
+            alertValidacionesEmail.style.display = "block"
+            // marcar el campo del error
+            txtEmail.style.border = "solid 2px #B4016C";
+            emailVal = false;
+            errores++;
+        } else {
+            emailVal = true;
+        }
 
-    }
+        // validar Mensaje
+        if (txtMensaje.value.length < 20) {
+            // habilitar que se muestre el mensaje
+            alertValidacionesMensaje.style.display = "block"
+            // marcar el campo del error
+            txtMensaje.style.border = "solid 2px #B4016C";
+            mensajeVal = false;
+            errores++;
+        } else {
+            mensajeVal = true;
+        }
 
-})
+        if (nombreVal == true && apellidoVal == true && emailVal == true && mensajeVal == true) {
+            btnEnviar.value = 'Sending...';
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Tu Mensaje ha sido enviado correctamente',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    btnEnviar.value = 'Enviar';
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+            txtNombre.value = "";
+            txtApellido.value = "";
+            txtEmail.value = "";
+            txtMensaje.value = "";
+        } else {
+
+        }
+
+    })
