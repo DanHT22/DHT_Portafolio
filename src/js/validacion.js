@@ -119,7 +119,7 @@ btnEnviar.addEventListener("click", function (e) {
 
     if (nombreVal == true && apellidoVal == true && emailVal == true && mensajeVal == true) {
         Email.send({
-            SecureToken: '4397aba7-2e30-4120-9b80-c7fe47087def',
+            SecureToken: 'FADDEAF4ADA779B4CD87870052C17F2043782',
             To: "tolumes.daniela@gmail.com",
             From: txtEmail.value,
             Subject: "Hola estimado",
