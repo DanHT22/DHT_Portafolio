@@ -8,8 +8,5 @@ Repositorio donde se encuentra el código del desarrollo de mi portafolio implem
 - Javascript
 
 ---
-******** [se encuentra en  desarrollo] ******** 
-
----
 
 ### DHT | 2023 
